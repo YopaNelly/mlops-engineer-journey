@@ -1,0 +1,2 @@
+required_columns: [id, price, category]
+drop_duplicates: true
