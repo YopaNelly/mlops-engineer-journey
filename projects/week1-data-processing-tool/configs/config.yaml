@@ -1,2 +1,3 @@
 required_columns: [id, price, category]
+numeric_columns: [price]
 drop_duplicates: true
