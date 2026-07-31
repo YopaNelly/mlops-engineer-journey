@@ -1,4 +1,5 @@
 [tool.poetry]
+package-mode = false
 name = "week1-data-processing-tool"
 version = "0.1.0"
 description = "Data cleaning and validation tool for MLOps week 1"
