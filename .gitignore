@@ -3,3 +3,4 @@ mlops-env/
 __pycache__/
 *.pyc
 .env
+**/logs/*.log
