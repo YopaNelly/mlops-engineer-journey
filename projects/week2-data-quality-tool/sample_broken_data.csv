@@ -1,0 +1,6 @@
+id,price,age,category
+1,25.50,30,electronics
+2,,45,food
+3,not-a-number,200,clothing
+4,15.00,-5,books
+5,8.99,28,electronics
