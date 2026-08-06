@@ -1,9 +1,9 @@
 import pandas as pd
-from report import run_quality_checks
-from save_report import save_json_report
-from render_html import render_html_report
+from .report import run_quality_checks
+from .save_report import save_json_report
+from .render_html import render_html_report
 
-df = pd.read_csv("../../sample_broken_data.csv")
+df = pd.read_csv("sample_broken_data.csv")
 
 report = run_quality_checks(
     df,
@@ -14,7 +14,7 @@ report = run_quality_checks(
 
 print(report)
 
-save_json_report(report, "../../quality_report.json")
-render_html_report(report, "../../quality_report.html")
+save_json_report(report, "quality_report.json")
+render_html_report(report, "quality_report.html")
 
 print("\nSaved quality_report.json and quality_report.html")
