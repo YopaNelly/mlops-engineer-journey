@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Data Quality Report</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f4f4f4; padding: 40px; }
+    .verdict {
+      font-size: 48px;
+      font-weight: bold;
+      padding: 30px;
+      border-radius: 12px;
+      text-align: center;
+      color: white;
+      /* This is the ENTIRE point of the Challenge answer:
+         one huge colored banner, readable from across a room,
+         before anyone reads a single word. */
+      background-color: {{ 'green' if report.passed else 'crimson' }};
+    }
+    .meta { color: #666; margin-top: 10px; text-align: center; }
+    table { width: 100%; border-collapse: collapse; margin-top: 30px; background: white; }
+    th, td { padding: 10px; border: 1px solid #ddd; text-align: left; }
+    th { background: #eee; }
+    .no-issues { color: #888; font-style: italic; }
+  </style>
+</head>
+<body>
+
+  <div class="verdict">
+    {{ "✓ PASSED" if report.passed else "✗ FAILED" }}
+  </div>
+  <div class="meta">
+    {{ report.row_count }} rows checked · {{ report.timestamp }}
+  </div>
+
+  <table>
+    <tr><th>Check</th><th>Column</th><th>Issue Count</th></tr>
+
+    {% for check_name, issues in report.checks.items() %}
+      {% if issues %}
+        {% for column, count in issues.items() %}
+        <tr>
+          <td>{{ check_name }}</td>
+          <td>{{ column }}</td>
+          <td>{{ count }}</td>
+        </tr>
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+
+    {% if report.passed %}
+    <tr><td colspan="3" class="no-issues">No issues found in any check.</td></tr>
+    {% endif %}
+  </table>
+
+</body>
+</html>
