@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-08-06T21:49:36.672863",
+  "row_count": 3,
+  "passed": true,
+  "checks": {
+    "missing": {},
+    "types": {},
+    "ranges": {}
+  }
+}
