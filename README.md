@@ -6,13 +6,13 @@ I'm YOPA Nelly, a Computer Engineering graduate from the National Higher Polytec
 
 I'm an organizer with **GDG Bambili** and **Women Techmakers Bambili**, and co-founder of **KwikPay**, a WhatsApp commerce automation platform. I'll be starting an AI/ML internship at **Caasitech Group** in early August.
 
-## 🎯 Why MLOps
+## Why MLOps
 
 Building ShopGuard AI taught me how to train a model that works. It didn't teach me how to deploy that model to real users, keep it working after the data around it changes, or know without guessing when it's quietly gotten worse. That gap is exactly what MLOps closes, and it's the gap between "I can build a model" and "I can be trusted to run one in production."
 
 I'm doing this 12-week accelerator publicly, in this repo, so the process is as useful to whoever finds it as the destination is to me.
 
-## 🗺️ My Learning Plan
+## My Learning Plan
 
 A 12-week, hands-on accelerator one real, shipped project every week, no exceptions:
 
@@ -24,7 +24,7 @@ A 12-week, hands-on accelerator one real, shipped project every week, no excepti
 
 Each week follows the same cycle: **learn → build → document → publish → review.** Every project lives in this repo, documented well enough that a stranger could clone it and understand it.
 
-## 🧰 Technologies I'll Learn
+## Technologies I'll Learn
 
 - **Programming:** Python, Bash, SQL
 - **Version control:** Git, GitHub, GitHub Actions
@@ -35,7 +35,7 @@ Each week follows the same cycle: **learn → build → document → publish →
 - **ML operations:** MLflow, DVC, Apache Airflow
 - **Monitoring:** Prometheus, Grafana
 
-## 📁 Repo Structure
+## Repo Structure
 
 ```
 mlops-engineer-journey/
@@ -46,7 +46,7 @@ mlops-engineer-journey/
 └── README.md
 ```
 
-## 📈 Progress
+## Progress
 
 | Week | Project | Status |
 |---|---|---|
@@ -63,7 +63,7 @@ mlops-engineer-journey/
 | 11 | Automatic Model Retraining System | 🔜 |
 | 12 | **Production MLOps Platform (Capstone)** | 🔜 |
 
-*(Updating each ✅ as weeks are completed.)*
+*(Updating each  as weeks are completed.)*
 
 ## 🔗 Connect
 
